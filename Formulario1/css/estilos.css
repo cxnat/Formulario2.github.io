@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5e6da, #f2d6c9, #eac1c1);
+    margin: 0;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.formulario {
+    background: #fff7f3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+}
+
+h2 {
+    text-align: center;
+    color: #7a4e48;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6b4a4a;
+}
+
+input, select {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #d8b8a6;
+}
+
+
+input:invalid {
+    border: 2px solid #e07474;
+}
+
+input:valid {
+    border: 2px solid #8bc48a;
+}
+
+
+.hobbies {
+    grid-column: span 2;
+}
+
+.hobbies label {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+
+.botones {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    background: #c88f8f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 5px;
+}

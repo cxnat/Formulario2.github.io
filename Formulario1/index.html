@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<div class="contenedor-principal">
+
+    <div class="formulario">
+
+        <h2>Inscríbete aquí</h2>
+
+        <form method="post">
+
+            <div class="grid">
+
+                <div class="campo">
+                    <label>Tipo de documento</label>
+                    <select name="tipo_documento" required>
+                        <option value="">Seleccione</option>
+                        <option>Cédula</option>
+                        <option>Tarjeta de Identidad</option>
+                        <option>Pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Número de documento</label>
+                    <input type="text" pattern="[0-9]{6,12}" required>
+                </div>
+
+                <div class="campo">
+                    <label>Sexo</label>
+                    <select required>
+                        <option value="">Seleccione</option>
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Nombres</label>
+                    <input type="text" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,64}" required>
+                </div>
+
+                <div class="campo">
+                    <label>Apellidos</label>
+                    <input type="text" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]{3,64}" required>
+                </div>
+
+                <div class="campo">
+                    <label>Correo</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="campo">
+                    <label>Celular</label>
+                    <input type="tel" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="campo">
+                    <label>Usuario</label>
+                    <input type="text" pattern="[A-Za-z]{3,14}[0-9]{0,2}" required>
+                </div>
+
+                <div class="campo">
+                    <label>Contraseña</label>
+                    <input type="password"
+                    pattern="(?=.*[A-Z])(?=(?:.*[a-z]){2,})(?=(?:.*[0-9]){5,})(?=.*[!?\-+/&$])[A-Za-z0-9!?\-+/&$]{16}"
+                    required>
+                </div>
+
+                <div class="campo">
+                    <label>Fecha</label>
+                    <input type="date" min="2026-02-15" max="2026-03-06" required>
+                </div>
+
+                <div class="campo hobbies">
+                    <label>Hobbies</label>
+
+                    <label><input type="checkbox"> Leer</label>
+                    <label><input type="checkbox"> Música</label>
+                    <label><input type="checkbox"> Deporte</label>
+                </div>
+
+            </div>
+
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

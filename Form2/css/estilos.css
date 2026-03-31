@@ -1,0 +1,48 @@
+/* Fondo de la página */
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f5f5f5;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #4E342E;
+}
+
+/* Formulario */
+form {
+    background-color: #EED9C4;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #A1887F;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+}
+
+/* Campos */
+input, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Validaciones */
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+/* Botones */
+button {
+    margin-top: 10px;
+    padding: 8px;
+    width: 48%;
+}
